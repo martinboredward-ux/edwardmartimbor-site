@@ -43,3 +43,9 @@ Canonical URLs, Open Graph tags, `sitemap.xml` and `robots.txt` already use `htt
 - [ ] Tab through each page with the keyboard (focus ring visible, skip link works)
 - [ ] Share a page URL in a messaging app to check the preview card
 - [ ] Review with Edward before switching DNS
+
+## Privacy
+
+- `/privacy/` holds the privacy policy and a **privacy-request** Netlify form (confirmation page: `/privacy/received/`). In Netlify, add an email notification for that form and answer requests within 30 days.
+- The site loads no outside fonts, scripts, analytics or embeds. Keep it that way, or update the privacy policy first.
+- Before course enrollment opens, name the course platform and payment provider in the policy's "What I collect" section.
