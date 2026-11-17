@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-root="../../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 | Steady Under Pressure Course | Edward J. Martimbor</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../assets/css/site.css">
+<link rel="stylesheet" href="learn.css">
+<script src="../../../assets/js/config.js" defer></script>
+<script src="../../../assets/js/site.js" defer></script>
+<script src="learn.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="../../../" class="brand">Edward J. Martimbor</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="../../../books/">Books</a></li><li><a href="../" aria-current="page">Course</a></li><li><a href="../../../about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<div class="learn-wrap">
+  <p class="learn-crumbs"><a href="../">Course home</a> &rsaquo; <a href="./">Start Here</a> &rsaquo; Chapter 1</p>
+
+  <ul class="chapter-nav">
+    <li><a data-chapter="start" href="./">Start Here</a></li>
+    <li><a data-chapter="ch1" class="current" href="ch1.html">Chapter 1</a></li>
+    <li><a data-chapter="ch2" data-requires="ch1" href="ch2.html">Chapter 2</a></li>
+  </ul>
+
+  <h1>Chapter 1: Healthcare IT: When Technology Supports Patient Care</h1>
+
+  <div class="lesson-box">
+    <h2>The big idea</h2>
+    <blockquote>An available system is not the same as a working clinical service. Patient care depends on workflows, not just uptime.</blockquote>
+    <p>Technology supports patient care; it does not define it. A server that is "up" according to monitoring can still leave nurses unable to see lab results, or registration staff unable to check a patient in. The leadership skill this chapter builds is telling the difference — and knowing who is accountable for closing that gap.</p>
+    <h3>You will build</h3>
+    <ol>
+      <li>A map of one real clinical workflow, validated by the people who do the work.</li>
+      <li>A list of that workflow's technology dependencies and its most consequential failure point.</li>
+      <li>Clear ownership: who leads, who investigates, who communicates, who verifies restoration.</li>
+      <li>Practice telling a technical-only ticket apart from a workflow-aware one.</li>
+      <li>A four-week plan to put this into practice with your own team.</li>
+    </ol>
+  </div>
+
+  <div class="worksheet">
+    <h3>Worksheet 1.1 &amp; 1.3 (sample — full workbook has 8 worksheets)</h3>
+    <p class="ws-save-note">Saved automatically in this browser as you type.</p>
+    <div class="ws-item">
+      <label for="ws1-1">Workflow selected (site / department and workflow name):</label>
+      <textarea id="ws1-1" data-ws="ch1_1_1_workflow"></textarea>
+    </div>
+    <div class="ws-item">
+      <label for="ws1-2">Map your actual workflow (5–10 steps, one per line, plain language):</label>
+      <textarea id="ws1-2" data-ws="ch1_1_1_steps"></textarea>
+    </div>
+    <div class="ws-item">
+      <label for="ws1-3">What work cannot be completed when this fails?</label>
+      <textarea id="ws1-3" data-ws="ch1_1_3_impact"></textarea>
+    </div>
+  </div>
+
+  <div class="worksheet">
+    <h3>Worksheet 1.7: Four-Week Adoption Plan</h3>
+    <ul class="tasklist">
+      <li><input type="checkbox" id="t1"><label for="t1">Week 1: Select three critical workflows; interview operational owners and map dependencies.</label></li>
+      <li><input type="checkbox" id="t2"><label for="t2">Week 2: Review ten recent tickets for missing impact, unclear ownership, premature closure.</label></li>
+      <li><input type="checkbox" id="t3"><label for="t3">Week 3: Pilot intake questions about affected work and patient-care impact. Train escalation.</label></li>
+      <li><input type="checkbox" id="t4"><label for="t4">Week 4: Publish decision owners and contact paths; rehearse a realistic disruption.</label></li>
+      <li><input type="checkbox" id="t5"><label for="t5">30-day review: choose one improvement to retain, set next review date and owner.</label></li>
+    </ul>
+  </div>
+
+  <div class="quiz-box" data-chapter="ch1" data-pass-mark="80" data-next="ch2.html">
+    <h2>Chapter 1 Knowledge Check</h2>
+    <p>Five questions. Pass mark 80% (4/5). You can retake this as many times as you like.</p>
+    <form>
+      <div class="quiz-q">
+        <p class="question">1. Monitoring shows the EHR and lab system are both online, but nurses report missing results. What is the most accurate description?</p>
+        <label><input type="radio" name="q1">No incident exists because both systems are up</label>
+        <label><input type="radio" name="q1" data-correct="true">The infrastructure is functioning, but the clinical service is not delivering its intended outcome</label>
+        <label><input type="radio" name="q1">It is a clinical problem, so IT should close the ticket</label>
+        <label><input type="radio" name="q1">It is a monitoring false alarm</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">2. Complete the leadership principle: "A technology inventory tells you what the organization owns. A workflow map tells you&hellip;"</p>
+        <label><input type="radio" name="q2">&hellip;what the organization spends</label>
+        <label><input type="radio" name="q2" data-correct="true">&hellip;what the organization depends on</label>
+        <label><input type="radio" name="q2">&hellip;who to blame when it fails</label>
+        <label><input type="radio" name="q2">&hellip;which vendor to call</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">3. Who should authorize a clinical workaround during an incident?</p>
+        <label><input type="radio" name="q3">The service desk analyst who took the call</label>
+        <label><input type="radio" name="q3">The vendor's support engineer</label>
+        <label><input type="radio" name="q3" data-correct="true">Appropriate clinical or operational leadership</label>
+        <label><input type="radio" name="q3">Whoever reaches the incident first</label>
+      </div>
+      <div class="quiz-q" data-multi="true">
+        <p class="question">4. (Select all that apply) Before closing the delayed-results incident, which of these should be true?</p>
+        <label><input type="checkbox" name="q4a" data-correct="true">Message flow is restored and the backlog has been reviewed</label>
+        <label><input type="checkbox" name="q4b" data-correct="true">Laboratory and clinical representatives confirm delayed results are reconciled</label>
+        <label><input type="checkbox" name="q4c">The interface was restarted, so nothing else is needed</label>
+        <label><input type="checkbox" name="q4d" data-correct="true">The workflow is confirmed usable by the people who perform it</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">5. Why does the book say patient care begins at registration?</p>
+        <label><input type="radio" name="q5">Registration staff are responsible for clinical decisions</label>
+        <label><input type="radio" name="q5" data-correct="true">Problems in upstream steps like registration travel downstream into clinical work</label>
+        <label><input type="radio" name="q5">Registration systems are always the most expensive</label>
+        <label><input type="radio" name="q5">It is required by HIPAA</label>
+      </div>
+      <button class="button gold" type="submit">Check my answers</button>
+      <p class="quiz-result" hidden></p>
+    </form>
+  </div>
+
+  <div class="next-chapter">
+    <a class="button gold ghost-disabled" aria-disabled="true" data-next-link href="#" hidden>Continue to Chapter 2</a>
+    <p class="locked-note">Pass the quiz above (80%+) to unlock Chapter 2.</p>
+  </div>
+
+  <p class="reset-progress"><button type="button" data-reset-progress>Reset my progress on this device</button></p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot"><p class="meta" style="margin:0">&copy; <span data-year>2026</span> Edward J. Martimbor</p></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" data-root="../../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 2 | Steady Under Pressure Course | Edward J. Martimbor</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../assets/css/site.css">
+<link rel="stylesheet" href="learn.css">
+<script src="../../../assets/js/config.js" defer></script>
+<script src="../../../assets/js/site.js" defer></script>
+<script src="learn.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="../../../" class="brand">Edward J. Martimbor</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="../../../books/">Books</a></li><li><a href="../" aria-current="page">Course</a></li><li><a href="../../../about/">About</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<div class="learn-wrap">
+  <p class="learn-crumbs"><a href="../">Course home</a> &rsaquo; <a href="./">Start Here</a> &rsaquo; Chapter 2</p>
+
+  <ul class="chapter-nav">
+    <li><a data-chapter="start" href="./">Start Here</a></li>
+    <li><a data-chapter="ch1" href="ch1.html">Chapter 1</a></li>
+    <li><a data-chapter="ch2" data-requires="ch1" class="current" href="ch2.html">Chapter 2</a></li>
+  </ul>
+
+  <noscript><p><strong>This page requires JavaScript</strong> to check your Chapter 1 progress.</p></noscript>
+
+  <h1>Chapter 2: Understanding the Healthcare Technology Environment</h1>
+
+  <div class="lesson-box">
+    <h2>The big idea</h2>
+    <blockquote>An asset inventory tells you what you own. A dependency map tells you what a service actually needs to keep working, end to end.</blockquote>
+    <p>Most healthcare IT environments already have an asset list somewhere. Far fewer have a map of which five or six services, if interrupted, would actually stop patient-facing work — and what each of those services quietly depends on: identity, interfaces, network, vendor hosting, specialized devices.</p>
+    <h3>You will build</h3>
+    <ol>
+      <li>A short list of your five most critical services, ranked by consequence of interruption.</li>
+      <li>One fully mapped service dependency chain, end to end.</li>
+      <li>A compact dependency register, linked to your CMDB rather than duplicating it.</li>
+      <li>A review of hidden failure points: legacy systems, single points of knowledge, expired certificates.</li>
+      <li>A four-week plan so a new on-call technician isn't dependent on one person's memory.</li>
+    </ol>
+  </div>
+
+  <div class="worksheet">
+    <h3>Worksheet 2.1 &amp; 2.3 (sample — full workbook has 9 worksheets)</h3>
+    <p class="ws-save-note">Saved automatically in this browser as you type.</p>
+    <div class="ws-item">
+      <label for="ws2-1">Your five critical services (Service | Work stopped if it fails | Owner | Rank 1–5):</label>
+      <textarea id="ws2-1" data-ws="ch2_2_1_services"></textarea>
+    </div>
+    <div class="ws-item">
+      <label for="ws2-2">Most important single point of failure across these services:</label>
+      <textarea id="ws2-2" data-ws="ch2_2_3_spof"></textarea>
+    </div>
+  </div>
+
+  <div class="worksheet">
+    <h3>Worksheet 2.8: Four-Week Adoption Plan</h3>
+    <ul class="tasklist">
+      <li><input type="checkbox" id="u1"><label for="u1">Week 1: Select five high-impact services with clinical and operational leaders.</label></li>
+      <li><input type="checkbox" id="u2"><label for="u2">Week 2: Map dependencies, owners, vendor contacts, and unknowns.</label></li>
+      <li><input type="checkbox" id="u3"><label for="u3">Week 3: Compare maps with incidents and changes; find unmonitored handoffs.</label></li>
+      <li><input type="checkbox" id="u4"><label for="u4">Week 4: Assign owners to three gaps; test one after-hours failure scenario.</label></li>
+    </ul>
+  </div>
+
+  <div class="quiz-box" data-chapter="ch2" data-pass-mark="75" data-next="../">
+    <h2>Chapter 2 Knowledge Check</h2>
+    <p>Four questions. Pass mark 75% (3/4).</p>
+    <form>
+      <div class="quiz-q">
+        <p class="question">1. What is the key difference between an asset inventory and a service dependency map?</p>
+        <label><input type="radio" name="q1">There is no real difference</label>
+        <label><input type="radio" name="q1" data-correct="true">An inventory lists what you own; a dependency map shows what a service needs to work, end to end</label>
+        <label><input type="radio" name="q1">A dependency map only covers network devices</label>
+        <label><input type="radio" name="q1">An inventory is only for finance</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">2. How should you rank which services are most critical?</p>
+        <label><input type="radio" name="q2">By equipment cost</label>
+        <label><input type="radio" name="q2" data-correct="true">By the consequence of interruption to clinical and operational work</label>
+        <label><input type="radio" name="q2">By how many tickets they generate</label>
+        <label><input type="radio" name="q2">Alphabetically</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">3. After an interface connection is restarted, what does that prove?</p>
+        <label><input type="radio" name="q3">All delayed messages were delivered</label>
+        <label><input type="radio" name="q3">The incident can be closed</label>
+        <label><input type="radio" name="q3" data-correct="true">Only that the connection is up; delayed messages and the workflow still need verification</label>
+        <label><input type="radio" name="q3">That no duplicates were created</label>
+      </div>
+      <div class="quiz-q">
+        <p class="question">4. What is the success test for the four-week plan?</p>
+        <label><input type="radio" name="q4">Every asset has a barcode</label>
+        <label><input type="radio" name="q4" data-correct="true">A new on-call technician can find the owner, escalation path, and verification method without relying on one person</label>
+        <label><input type="radio" name="q4">The dashboard shows all green</label>
+        <label><input type="radio" name="q4">The vendor contract is renewed</label>
+      </div>
+      <button class="button gold" type="submit">Check my answers</button>
+      <p class="quiz-result" hidden></p>
+    </form>
+  </div>
+
+  <div class="next-chapter">
+    <a class="button gold ghost-disabled" aria-disabled="true" data-next-link href="#" hidden>Module 1 complete &mdash; back to Course Home</a>
+    <p class="locked-note">Pass the quiz above (75%+) to finish Module 1. Chapters 3&ndash;19 aren't built in this prototype yet.</p>
+  </div>
+
+  <p class="reset-progress"><button type="button" data-reset-progress>Reset my progress on this device</button></p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot"><p class="meta" style="margin:0">&copy; <span data-year>2026</span> Edward J. Martimbor</p></div>
+</footer>
+</body>
+</html>
